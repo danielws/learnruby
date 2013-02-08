@@ -1,0 +1,184 @@
+GLOSSARY
+==============================================================================================
+
+PROGRAMS --------------------------------------------------------------------------------------
+1. Ruby - A dynamic, interpeted, open-source programming language with an emphasis on simplicity
+   and productivity.
+2. rvm - Ruby version manager
+
+TERMINAL COMMANDS -----------------------------------------------------------------------------
+ls - List out files in a directory
+mkdir - Create a directory
+cd - Change directory
+cat - Concatenate files together, but mostly an easy way to print a file to the screen.
+
+RUBY TERMINAL COMMANDS ------------------------------------------------------------------------
+ruby - Starts Ruby in terminal
+-v - type after 'ruby' to find out the version of Ruby currently installed
+irb - interactive ruby shell. 
+filename.rb - a file's name with the file extension for a ruby file
+filename.txt - a text file.
+
+RUBY WORDS & SYMBOLS -------------------------------------------------------------------------
+
+^ - Caret
+
+" - Double qoutes. Use it to start a string. Especially if you want to use escape characters.
+
+' - Single qoutes. Use it to start a string and print escape characters.
+
+: - Colon
+
+0 - integer
+
+0.0 - floating number
+
+# - Octothorpe or Pound sign. Use it to start a comment
+
+= - Equals. Use it to assign a value to a variable or do some math (or meth)
+
++ - plus
+
+- - minus
+
+/ - slash
+
+\ - backslash
+
+* - asterisk
+
+% - percent
+
+< - less-than
+
+> - greater-than
+
+< - less-than-equal
+
+> - greater-than-equal
+
+_ - Underscore
+ 
+{ - Curly bracket or curly brace
+
+$ - Dollar sign
+
++= - Syntactic shorthand: a += b is actually a = a + b under the hood.
+
+>> - Shovel operator concatenates a string.
+
+puts - Print the following string with a line break afterwards
+
+variable - A name given to a stored value
+
+format sequence - Things like %s and %d. Put them in a string, then "feed them values outside
+                  the string %s  with %d brackets" % [this value, 7]   if only one value then
+                  lose the brackets kid.
+format string - a string containing format sequences followed by variables at the end.
+
+  Field type characters:
+  b - convert argument as a binary number
+  c - argument is binary code for a single character
+  d - convert the argument as a decimal number
+  E - equivalent to 'e' but uses the uppercase E to indicate the exponent
+  e - convert floating point argument into exponential notation with one digit before
+      the decimal point, the precision determines the number of fractional digits (defaulting
+       to six)
+  f - convert floating point argument as [-]ddd.ddd, where the precision determines the 
+      number of digits after the decimal point.
+  G - equivalent to 'g', but uses an uppercase "E" in exponent form.
+  g - convert a floating point number into exponent form if the exponent is less than -4 
+      or greater than or equal to or in dd.dddd form otherwise.
+  i - identical to 'd'
+  o - convert argument as an octal number.
+  s - argument is a string to be substituted. If the format sequence contains a precision,
+      at most that many characters will be copied.
+  u - treat argument as unsigned decimal number.
+  X - convert argument as hexidecimal number using uppercase letters.
+  x - convert argument as hexidecimal number.
+
+string - use "" or '' to make a string. It's something your program might give to a human.
+
+string literal - When a string is typed into the code ex: 'This is one.', "This is one too."
+
+string interpolation - inject a variable into a string using #{}
+
+printing - Outputting a value to be read by a human.
+
+print - print a string with no line break at the end.
+
+multi-line string or document syntax = <<PARAGRAPH this is the contents. and then end it 
+with PARAGRAPH
+
+Escape sequences = Print characters that close a string inside a string
+   \' - single backslash
+   \\ - double backslash
+   \a - bell alert
+   \b - backspace
+   \r - carriage return - move the cursor to the first position on the same line.
+   \n - new line
+   \s - space
+   \t - tab
+
+gets - Accepts a single line of data from the standard input. Retrieves only strings with a
+       \n character at the end.
+
+chomp() -  Removes the \n at the end of the string from .gets
+
+libraries - Features you add to make your Ruby program do more. It's a collection of classes
+            contained in a file.
+
+require - loads any given file only once. require 'filename'
+
+include - includes the named Ruby source file everytime the method is executed. 
+          load 'filename.rb'
+
+ARGV - An array variable which holds, as strings, each argument passed by the shell.
+
+arguments - Data passed into a function.
+
+$0 - contains the name of the ruby program being run. This is typically the script name.
+
+STDIN - A global variable that handles a stream for the standard input. It can be used 
+        to read input from the console.
+
+FILE - File is the only subclass of the IO class. An abstraction of any file object
+       accessible by the program.
+
+open - Assign the contents of a file (passed in as an argument) to FILE and then use the
+       methods of the FILE class to manipulate the contents or assign to a variable. 
+
+read - Read the contents of the file, you can assign the result to a variable.
+
+readline - Reads just one line of the text file.
+
+truncate - Empties the file, watch out if you care about the file.
+
+write(stuff) - Writes stuff to the file.
+
+close - Closes the file. Like File->Save.. in a GUI
+
+'w' - passed in to .open() it opens the file in 'write' mode.
+
+size(file_name) - Returns the size of file_name. In what unit? Bits?
+
+exists? - Returns 'true' if a file exists based on its name in a string as an argument.
+          It returns false if not.
+
+def - creates a function
+
+end - closes a function
+
+method - a function inside of a class
+
+IO - Class IO is the basis for all input and output in ruby.
+
+seek() - Seeks to a given offset of anInteger according to the value of whence:
+
+:: - Call a method from an outside class or module
+
+rewind() - Positions the ios to the beginning of input, resetting lineno to zero
+
+
+
+
