@@ -1,0 +1,32 @@
+Freud Prototype Features
+
+Superclass Entries
+  Creates an empty array for 'years'
+Subclass Year
+  Create a year array
+Subclass Month
+  Create a month array
+Subclass Week
+  Create a week array 
+Subclass Day
+  Create a day array
+
+Store messages in the day array.
+Take multi-line strings from the command line
+
+Make the DateTime the key for the message stored in the hash so it
+can be retrieved later with a retrieve function.
+
+entries = Hash.new
+
+def prompt
+  print "> "
+end
+
+def new_entry
+  prompt; text = gets.chomp
+end
+
+entries[DateTime] = new_entry 
+
+puts entries

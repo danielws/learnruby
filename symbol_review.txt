@@ -1,0 +1,163 @@
+Exercise 37 Symbol_Review
+
+
+alias - Create a second name for a method or variable.
+
+and - Boolean operator that executes an enclosed block if both arguments are true.
+
+BEGIN - The block following BEGIN is evaluated before any other statement in the file.
+
+begin - Expression executes its body and returns the value of the last evaluated expression. 
+        If an exception occurs in the begin body, the rescue clause with the matching exception type is executed (if any). 
+
+break - Exits from the most internal loop.
+
+case - Compares the expression specified by case and that specified by when using the === operator and executes the
+       code of the when clause that matches.
+
+class - Defines the new class. The class names are identifiers begin with uppercase character.
+
+def - Begins a method declaration.
+
+defined? - Returns false (nil) if the expression is not defined. Returns the string that describes a kind of the expression.
+
+do - The method may be invoked with the block (do .. end or {..}). The method may be evaluate back that block from inside of the invocation. The methods that calls back the blocks are sometimes called as iterators.
+ 
+else - Executes if all boolean evaluations return 'false' 
+
+elsif - used as a secondary boolean evauation if the 'if' statement returns false. 
+
+END - Registers finalize routine. The block followed after END is evaluated just before the interpreter termination. Unlike BEGIN, END blocks shares their local variables, just like blocks. 
+
+end - This closes a block. Function, declaration, etc.
+
+ensure - The ensure code block executes regardless of the success or failure of the begin block.
+
+false - Boolean value nil also evaluates to false.
+
+for - Executes body for each element in the result of expression. for is the syntax sugar for:
+
+if - Boolean expression. If expression returns 'true' execute the enclosed block.
+
+in - points to the body to which the for loop executes its operation.
+
+module - Defines a new module. Use a module for a method you will utilize across multiple classes. Classes are about objects. Modules are about functions.
+
+next - Jumps to next iteration of the most internal loop.
+
+nil - Nothin. This also evaluates to false.
+
+not - returning value of !variable => not variable
+
+or - Boolean expression that passes if either condition returns "true.
+
+redo - Restarts this iteration of the most internal loop, without checking loop condition.
+
+rescue - If you haven't provided such a clause, the program terminates; if you have, control flows to the rescue clause. 
+
+retry - If retry appears in rescue clause of begin expression, restart from the beginning of the 1begin body. If retry appears in the iterator, the block, or the body of the for expression, restarts the invocation of the iterator call. Arguments to the iterator is re-evaluated.
+
+return - Exits from method with the return value. If more than two expressions are given, the array contains these values will be the return value. If no expression given, nil will be the return value.
+
+self - Gives you access to the current object.
+
+super - When you invoke super with no arguments Ruby sends a message to the parent of the current object, asking it to invoke a method of the same name as the method invoking super.
+
+then - Execute a following block if an 'if' statement passes
+
+undef - Cancels the method definition. Undef can not appear in the method body.
+
+unless - Used for reverse conditional execution. It is equivalent to a bang "!". When used as a modifier: executes left hand side expression, if right hand side expression is false.
+
+until - Loop: Executes body until condition expression returns true. Modifier: Repeats evaluation of left hand side expression, until right hand side is true.
+
+when - Part of the statement operator 'case'. The value of the case statement is the value of the successful when clause, or nil if there is no such clause.
+
+while - While takes a condition argument, and executes the code that follows (up to a matching end delimiter) while the condition is true.
+
+yield - Put it in a method definition to make the following line available to inject into a block when the method is called.
+
+true - Boolean value returned if an expression is 'true'
+
+false - Boolean value returned if an expresssion evaluations to 'false' or returns 'nil'
+
+nil - An object, too. In fact, it is an instance of the NilClass: There's always only one instance. If an object is nothing. It is the Nil object.
+
+constants - A constant has a name starting with an uppercase character. A Ruby constant is like a variable, except that its value is supposed to remain constant for the duration of the program.
+
+strings - "string" 'string'. A String object holds and manipulates an arbitrary sequence of bytes, typically representing characters.
+
+numbers - Can be manipulated by operators and stored in a variable
+
+ranges - (1..9) or (1...9) excludes 9.
+
+arrays - Holds objects in an order.
+
+hashes - An un ordered list of keys that are connected to values. Hashes enumerate their values in the order that the corresponding keys were inserted.
+
+escape sequences - 
+
+:: - Allows: constants, instance methods and class methods defined within a class or module, to be accessed from anywhere outside the class or module. 
+
+[] - An array
+
+** - Exponential, 2 ** 2 => 8 
+
+-(unary) - Subtract
+
++(unary) - Add
+
+! - "bang" inverse
+
+~ - Tilde
+
+* - Asterisk. Use it to multiply stuff
+
+/ - Forward slash: use it to divide stuff.
+
+% - Percent use it to interpolate strings #{} or "string %s %d" % ['string1' '09']
+
++ - Plus. Use it to add stuff.
+
+<< - Shovel operator. Same shit as +=
+
+>> - The left operands value is moved right by the number of bits specified by the right operand. 
+
+& - Ampersand. Binary AND Operator copies a bit to the result if it exists in both operands.
+
+| - Pipe. Start a block
+
+> - Greater than. Make a comparison
+
+>= - Greater than or equal to.
+
+< - Less than
+
+<= - Less than or equal to.
+
+<=> - Returns 0 if first operand equals second, 1 if first operand is greater than the second and -1 if first operand is less than the second. 
+
+== - Boolean operator. If x == y.
+
+=== - Used to test equality within a when clause of a case statement.
+
+!= - Doesn't equal
+
+=~ - 
+
+!~
+
+&& - Boolean operator. Shorthand for AND
+
+|| - Boolean operator. Shorthand for OR
+
+.. - Use to specify range. Include last value in range.
+
+... - Use to specify range. DO NOT include last value in range.
+
+
+
+
+
+
+
